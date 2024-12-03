@@ -1,0 +1,32 @@
+// /**
+// * Basic typography style for copy text
+// */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: $cor-preto;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+.titulo {
+  @extend %titulo;
+  font-weight: 400;
+
+  & span {
+    font-weight: 700;
+    color: $cor-azul-claro;
+  }
+}
+.subtitulo {
+  @extend %subtitulo;
+
+  & span {
+    color: $cor-amarelo;
+  }
+}

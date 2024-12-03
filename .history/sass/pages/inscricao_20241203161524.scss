@@ -44,10 +44,6 @@
   &--passo,
   &--aprender {
     @include flex($direction: column, $align: start, $gap: 6rem);
-
-    @include respond(small) {
-      gap: 3.9rem;
-    }
   }
 
   &--quem {

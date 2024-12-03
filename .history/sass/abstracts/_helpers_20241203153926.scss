@@ -36,19 +36,12 @@ $cor-amarelo-escuro: #997a1b;
     @media (max-width: 54.125em) {
       @content;
     }
-  } @else if $tamanho == small {
-    @media (max-width: 48.125em) {
-      @content;
-    }
   }
 }
 
 %titulo {
   font-size: 5rem;
   line-height: 1.1;
-  @include respond(small) {
-    font-size: 3.8rem;
-  }
 }
 
 %subtitulo {

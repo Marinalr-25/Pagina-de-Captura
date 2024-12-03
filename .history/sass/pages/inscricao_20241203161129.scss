@@ -44,10 +44,6 @@
   &--passo,
   &--aprender {
     @include flex($direction: column, $align: start, $gap: 6rem);
-
-    @include respond(small) {
-      gap: 3.9rem;
-    }
   }
 
   &--quem {
@@ -74,7 +70,8 @@
     gap: 4rem;
 
     @include respond(small) {
-      gap: 2rem;
+      grid-template-columns: repeat(1, 1fr);
+      align-self: center;
     }
   }
 }
@@ -117,6 +114,10 @@
 .aprender--img {
   border-radius: 2rem;
   transition: transform 300ms ease;
+
+  @include respond(small) {
+    width: 146.4%;
+  }
 
   &:hover {
     transform: scale(1.05);

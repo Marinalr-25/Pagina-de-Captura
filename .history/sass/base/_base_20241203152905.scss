@@ -14,9 +14,6 @@ html {
   @include respond(big) {
     font-size: 56.25%;
   }
-  @include respond(medium) {
-    font-size: 50%;
-  }
 }
 
 img {

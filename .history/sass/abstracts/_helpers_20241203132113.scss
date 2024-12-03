@@ -27,28 +27,9 @@ $cor-amarelo-escuro: #997a1b;
   gap: $gap;
 }
 
-@mixin respond($tamanho) {
-  @if $tamanho == big {
-    @media (max-width: 60.625em) {
-      @content;
-    }
-  } @else if $tamanho == medium {
-    @media (max-width: 54.125em) {
-      @content;
-    }
-  } @else if $tamanho == small {
-    @media (max-width: 48.125em) {
-      @content;
-    }
-  }
-}
-
 %titulo {
   font-size: 5rem;
   line-height: 1.1;
-  @include respond(small) {
-    font-size: 3.8rem;
-  }
 }
 
 %subtitulo {

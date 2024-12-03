@@ -10,7 +10,6 @@
     background-position: 50%;
     background-repeat: no-repeat;
     padding: 6.1rem 2rem 0 6.1rem;
-    overflow: hidden;
   }
   &--disclaimer {
     padding: 3.12rem 2rem;
@@ -35,19 +34,11 @@
     position: relative;
     align-items: end;
     width: 100%;
-
-    @include respond(small) {
-      @include flex($direction: column, $align: center, $gap: 3.12rem);
-    }
   }
 
   &--passo,
   &--aprender {
     @include flex($direction: column, $align: start, $gap: 6rem);
-
-    @include respond(small) {
-      gap: 3.9rem;
-    }
   }
 
   &--quem {
@@ -60,22 +51,12 @@
   &--passo {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 6rem;
-    column-gap: 2rem;
-
-    @include respond(small) {
-      grid-template-columns: repeat(2, 1fr);
-      row-gap: 3.9rem;
-      column-gap: 3rem;
-    }
+    column-gap: 3rem;
   }
 
   &--aprender {
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
-
-    @include respond(small) {
-      gap: 2rem;
-    }
   }
 }
 
@@ -86,24 +67,12 @@
   right: 0;
   bottom: 0;
   transform: translateX(10%);
-
-  @include respond(small) {
-    position: relative;
-    transform: none;
-    width: 53rem;
-  }
 }
 
 .img-lira {
   grid-column: 2;
   grid-row: 1 / span 2;
   align-self: center;
-  @include respond(small) {
-    max-width: 27.5rem;
-    grid-column: 1 / span 2;
-    grid-row: auto;
-    justify-self: center;
-  }
 }
 
 .disclaimer__paragrafo {
@@ -150,10 +119,4 @@
   right: 0;
   bottom: 0;
   width: 45%;
-}
-
-.img-seta {
-  @include respond(small) {
-    width: 4rem;
-  }
 }

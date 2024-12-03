@@ -46,9 +46,6 @@ $cor-amarelo-escuro: #997a1b;
 %titulo {
   font-size: 5rem;
   line-height: 1.1;
-  @include respond(small) {
-    font-size: 3.8rem;
-  }
 }
 
 %subtitulo {

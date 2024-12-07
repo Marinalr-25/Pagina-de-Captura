@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+.secao {
+  @include flex($direction: column);
+  padding: 6.1rem 2rem;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  max-width: 100rem;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+}

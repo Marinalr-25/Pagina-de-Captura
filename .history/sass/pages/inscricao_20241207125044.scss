@@ -1,0 +1,172 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+// HERO
+.secao {
+  &--hero {
+    background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/64957938a8a62d8071397ed5_pgc-python-bg1.webp);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    padding: 6.1rem 2rem 0 6.1rem;
+    overflow: hidden;
+  }
+  &--disclaimer {
+    padding: 3.12rem 2rem;
+    background-color: $cor-cinza;
+    box-shadow: 0 0.5rem 1rem -0.2rem rgba(black, 0.15);
+  }
+
+  &--quem {
+    background-image: url(https://assets-global.website-files.com/61b9e0dd381626819c8d4f83/62cefb1ecf7f4662905b5b1e_%5BBACKGROUND%5D%20-%20BANNER%2005%20-%20desktop.webp);
+    background-position-x: 50%;
+    background-position-y: 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 21rem;
+    padding-bottom: 0;
+    margin-top: -14rem;
+  }
+}
+
+.container {
+  &--hero {
+    position: relative;
+    align-items: end;
+    width: 100%;
+
+    @include respond(small) {
+      @include flex($direction: column, $align: center, $gap: 3.12rem);
+    }
+  }
+
+  &--passo,
+  &--aprender {
+    @include flex($direction: column, $align: center, $gap: 6rem);
+
+    @include respond(small) {
+      gap: 3.9rem;
+    }
+  }
+
+  &--quem {
+    position: relative;
+    width: 100%;
+
+    @include respond(small) {
+      @include flex($direction: column, $align: center);
+    }
+  }
+}
+
+.grid {
+  &--passo {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 6rem;
+    column-gap: 2rem;
+
+    @include respond(small) {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 3.9rem;
+      column-gap: 3rem;
+    }
+  }
+
+  &--aprender {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+
+    @include respond(small) {
+      gap: 2rem;
+    }
+  }
+}
+
+.div-lira {
+  position: absolute;
+  display: flex;
+  width: 70%;
+  right: 0;
+  bottom: 0;
+  transform: translateX(10%);
+
+  @include respond(small) {
+    position: relative;
+    transform: none;
+    width: 53rem;
+  }
+}
+
+.img-lira {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  @include respond(small) {
+    max-width: 27.5rem;
+    grid-column: 1 / span 2;
+    grid-row: auto;
+    justify-self: center;
+  }
+}
+
+.disclaimer__paragrafo {
+  font-size: 1.33rem;
+}
+
+.cabecalho--titulo {
+  @include flex($align: center, $gap: 1.6rem);
+}
+
+.aprender--img {
+  border-radius: 2rem;
+  transition: transform 300ms ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.quem {
+  @include flex($direction: column, $gap: 3.12rem);
+  color: #fff;
+  max-width: 50%;
+  width: 100%;
+  margin-bottom: 6.1rem;
+
+  @include respond(small) {
+    margin-bottom: 0rem;
+  }
+
+  &__cabecalho {
+    border-left: solid 0.4rem $cor-amarelo;
+    padding-left: 2rem;
+  }
+
+  &__textos {
+    @include flex($direction: column, $gap: 1.6rem);
+
+    & span {
+      color: $cor-amarelo;
+      font-weight: 700;
+    }
+  }
+}
+
+.img-lira-logo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 45%;
+
+  @include respond(small) {
+    position: relative;
+    width: 40rem;
+  }
+}
+
+.img-seta {
+  @include respond(small) {
+    width: 4rem;
+  }
+}

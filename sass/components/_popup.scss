@@ -19,7 +19,7 @@
   &__container {
     @include flex($direction: column, $justify: space-between, $gap: 1.5rem);
     position: relative;
-    width: 60rem;
+    width: 50rem;
     height: 27rem;
     padding: 2rem;
     padding-top: 3.5rem;
@@ -29,9 +29,11 @@
     border: solid 4px white;
     border-color: white;
 
-    & .textos {
-      text-align: justify;
-      gap: 1.6rem;
+    @include respond(tiny) {
+      max-width: 50rem;
+      width: 90%;
+      padding: 1.02rem;
+      justify-content: center;
     }
   }
   &__botao {

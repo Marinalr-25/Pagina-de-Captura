@@ -1,0 +1,24 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.botao {
+  @extend %botao;
+
+  &--amarelo {
+    @extend %botao--amarelo;
+    &:hover {
+      border-width: 3px;
+      color: $cor-amarelo;
+      background-color: white;
+    }
+  }
+
+  &--centralizado {
+    align-self: center;
+  }
+
+  &--texto-pequeno {
+    @extend %botao-texto--pequeno;
+  }
+}

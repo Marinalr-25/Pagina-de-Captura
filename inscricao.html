@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="preload"as="style" onload="this.onload=null;this.rel='stylesheet'">
     <title>Pagina de Captura</title>
+    <link rel="preload" href="css/style.css" as="style" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -11,7 +15,7 @@
       <div class="container container--hero">
         <div class="caixa">
           <div class="caixa__div-logo">
-            <img
+            <img loading="eager"
               src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/61f449266c92e6cb7fe98a43_LOGO%202%20(FINAL)%20V2%20(2).png"
               alt="logo hasgtag programação"
               class="caixa__logo"
@@ -24,14 +28,14 @@
 
           <ul class="caixa__lista">
             <li class="caixa__item-lista">
-            <img 
+            <img loading="eager"
               src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/62cef75c0262284af718645d_checked.webp" 
               alt="icone-check"
               class="caixa__icone"/>
               <p><b>Vire uma referência</b> no Mercado de Trabalho por causa do Python;</p>
             </li>
             <li class="caixa__item-lista">
-              <img 
+              <img loading="eager"
               src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/62cef75c0262284af718645d_checked.webp" 
               alt="icone-check"
               class="caixa__icone"/>
@@ -41,7 +45,7 @@
               </p>
             </li>
             <li class="caixa__item-lista">
-              <img 
+              <img loading="eager"
                 src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/62cef75c0262284af718645d_checked.webp" 
                 alt="icone-check"
                 class="caixa__icone"/>
@@ -56,8 +60,10 @@
           <button class="botao botao--amarelo js-botao">Quero participar!</button>
         </div>
           <div class="div-lira">
-            <img
-              src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/62cef668d5cacb28cd77d5ef_jo%C3%A3o%20lira%20%2B%20dash.webp"
+            <img loading="lazy"
+              src="img/lira-hero.webp"
+              srcset="img/lira-hero.webp 700w, img/lira-secao-hero_424.webp 424w"
+              sizes="(max-width: 770px) 424px, 700px"
               alt="Lira da hashtag"
             />
           </div>
@@ -72,7 +78,7 @@
     <section class="secao">
       <div class="container container--passo">
         <div class="cabecalho--titulo">
-          <img src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/62cef84825a7b7d2f1aef5e3_%5BELEMENTO%5D%20seta%20dupla.png" alt="icone seta" class="img-seta">
+          <img src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/62cef84825a7b7d2f1aef5e3_%5BELEMENTO%5D%20seta%20dupla.png" loading="lazy" alt="icone seta" class="img-seta">
           <h2 class="titulo">Siga o <span>passo a passo!</span></h2>
         </div>
 
@@ -80,7 +86,7 @@
           <div class="passo">
             <div class="passo__cabecalho">
               <div class="passo__caixa-icone">
-                <img src="img/alert-triangle-svgrepo-com.svg" alt="icone triângulo"
+                <img src="img/alert-triangle-svgrepo-com.svg" loading="lazy" alt="icone triângulo"
                 class="passo__icone">
               </div>
               <p class="passo__titulo passo__titulo--azul">Passo 1</p>
@@ -90,7 +96,7 @@
           <div class="passo">
             <div class="passo__cabecalho">
               <div class="passo__caixa-icone">
-                <img src="img/certificate-svgrepo-com.svg" alt="icone triângulo"
+                <img src="img/certificate-svgrepo-com.svg" loading="lazy" alt="icone triângulo"
                 class="passo__icone">
               </div>
               <p class="passo__titulo passo__titulo--azul">Passo 2</p>
@@ -100,7 +106,7 @@
           <div class="passo">
             <div class="passo__cabecalho">
               <div class="passo__caixa-icone">
-                <img src="img/chart-mixed-svgrepo-com.svg" alt="icone triângulo"
+                <img src="img/chart-mixed-svgrepo-com.svg" loading="lazy" alt="icone triângulo"
                 class="passo__icone">
               </div>
               <p class="passo__titulo passo__titulo--azul">Passo 3</p>
@@ -110,7 +116,7 @@
           <div class="passo">
             <div class="passo__cabecalho">
               <div class="passo__caixa-icone">
-                <img src="img/python-127-svgrepo-com.svg" alt="icone triângulo"
+                <img src="img/python-127-svgrepo-com.svg" loading="lazy" alt="icone triângulo"
                 class="passo__icone">
               </div>
               <p class="passo__titulo passo__titulo--azul">Passo 4</p>
@@ -118,40 +124,40 @@
             <p>Coloque em prática todos os conhecimentos adquiridos nas aulas e aprenda como você pode utilizar o Python para <b>impressionar no mercado de trabalho.</b></p>
           </div>
 
-          <img src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/62cef848a5d528c80b0c3f6b_%5BELEMENTO%5D%20jo%C3%A3o%20lira%20e%20planilha.webp" alt="lira no circulo com a logo"
+          <img src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/62cef848a5d528c80b0c3f6b_%5BELEMENTO%5D%20jo%C3%A3o%20lira%20e%20planilha.webp" loading="lazy" alt="lira no circulo com a logo"
           class="img-lira">
           
       </div>
       </div>
     </section>
-    <section class="secao">
+    <section class="secao secao--evento">
       <div class="container container--aprender">
         <div class="cabecalho--titulo">
-          <img src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/62cef98e3d834a18ba77139f_%5BELEMENTO%5D%20seta-dupla.png" alt="icone seta" class="img-seta">
-          <h2 class="titulo">Nesse <span>evento gratuito</span> você vai aprender:</h2>
+          <img src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/62cef98e3d834a18ba77139f_%5BELEMENTO%5D%20seta-dupla.png" loading="lazy" alt="icone seta" class="img-seta">
+          <h2 class="titulo titulo--pequeno">Nesse <span>evento gratuito</span> você vai aprender:</h2>
         </div>
 
         <div class="grid grid--aprender">
-            <a href="https://hashaqui.com/youtube/v/PC2zzPa4L4Y" target="blank">
-              <img src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/64ecec733661d11fda8a436c_%5BLPY15%5D%20Thumb%20-%20Aula%201.webp" alt="thumb da aula 1"
+            <a href="https://hashaqui.com/youtube/v/PC2zzPa4L4Y" loading="lazy"  target="blank">
+              <img src="img/thumb-1 - Copia.webp" alt="thumb da aula 1"
               class="aprender--img">
             </a>
-            <a href="https://hashaqui.com/youtube/v/ipkLYWaiPTQ" target="_blank">
-              <img src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/659dac28e97f5316e0e4fe06_%5BLPY15%5D%20Thumb%20-%20Aula%202%20-%20sem%20data%20(1).webp" alt="thumb da aula 2"
+            <a href="https://hashaqui.com/youtube/v/ipkLYWaiPTQ" loading="lazy" target="_blank">
+              <img src="img/thumb-2 - Copia.webp" alt="thumb da aula 2"
               class="aprender--img">
             </a>
-            <a href="https://hashaqui.com/youtube/v/b356fbcT34g" target="_blank">
-              <img src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/64ecec95d687718995720dee_%5BLPY15%5D%20Thumb%20-%20Aula%203.webp" alt="thumb da aula 3"
+            <a href="https://hashaqui.com/youtube/v/b356fbcT34g" loading="lazy" target="_blank">
+              <img src="img/thumb-3 - Copia.webp" alt="thumb da aula 3"
               class="aprender--img">
             </a>
-            <a href="https://hashaqui.com/youtube/v/JNtSkZncRXM" target="_blank">
-              <img src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/64ececa07913e34e13d347ff_%5BLPY15%5D%20Thumb%20-%20Aula%204.webp" alt="thumb da aula 4"
+            <a href="https://hashaqui.com/youtube/v/JNtSkZncRXM" loading="lazy" target="_blank">
+              <img src="img/thumb-4 - Copia.webp" alt="thumb da aula 4"
               class="aprender--img">
             </a>
         </div>
 
 
-          <button class="botao botao--amarelo botao--centralizado js-botao">Quero assistir as aulas de graça!</button>
+          <button class="botao botao--amarelo botao--centralizado botao--texto-pequeno js-botao">Quero assistir as aulas de graça!</button>
           
       </div>
     </section>
@@ -167,13 +173,13 @@
           </div>
         </div>
         <div class="img-lira-logo">
-          <img src="https://thunderous-eclair-ef442e.netlify.app/img/lira-logo.webp" alt="imgagem do lira">
+          <img src="https://thunderous-eclair-ef442e.netlify.app/img/lira-logo.webp" loading="lazy"  alt="imgagem do lira">
         </div>
       </div>
     </section>
     <footer class="rodape">
       <div class="container container--rodape">
-        <img src="https://thunderous-eclair-ef442e.netlify.app/img/Logo%20H%20Quadrado.webp" alt="Logo da hashtag" class="rodape__logo">
+        <img src="https://thunderous-eclair-ef442e.netlify.app/img/Logo%20H%20Quadrado.webp" loading="lazy"  alt="Logo da hashtag" class="rodape__logo">
         <a href="https://excelparaestagio.klickpages.com.br/politica-privacidade" target="_blank">Política de privacidade</a>
         <p>|</p>
         <a href="https://excelparaestagio.klickpages.com.br/termos-uso">Termos de uso</a>
